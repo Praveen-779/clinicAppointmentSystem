@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form style="text-align:center;" id="loginForm" onsubmit="addData(event)" method="POST">
+        <label for="userName">Enter Mail</label><br>
+        <input type="email" id="userName" name="userName" required><br><br>
+        <label for="password">Enter Password</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
+    <div id="displayErr" style="color: red;"></div>
+</body>
+</html>
+<script src="./login.js">
+    
+</script>

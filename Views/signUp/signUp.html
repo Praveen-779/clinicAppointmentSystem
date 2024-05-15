@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+</head>
+<body>
+    <form style="text-align:center;" onsubmit="addData(event)" method="POST" id="signupForm">
+        <label for="firstName">First Name</label><br>
+        <input type="text" id="firstName"  required><br><br>
+        <label for="lastName">Last Name</label><br>
+        <input type="text" id="lastName"  required><br><br>
+        <label for="gender">Gender</label><br>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select><br><br>
+        <label for="dateOfBirth">Date Of Birth</label><br>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required oninput="calculateAge()"><br><br>
+        <label for="age">Enter Age</label><br>
+        <input type="text" id="age" required><br><br>
+        <label for="address">Address</label><br>
+        <textarea id="address" name="address" required></textarea><br><br>
+        <label for="contactNumber">Contact Number</label><br>
+        <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+        <label for="email">Enter Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
+<script src="./signup.js">
+   
+</script>

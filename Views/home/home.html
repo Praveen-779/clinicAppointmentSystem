@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    #toggle {
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+}
+
+</style>
+<body style="text-align:center;">
+    <div >
+        <h1>Welcome to Clinic Appointment System</h1>
+        <div id="noOfBookings">
+        </div>
+        <div id="nextBookingDate">
+        </div>
+        
+    </div>
+    <div id="toggle">
+        <h3>Menu</h5>
+        <a href="../appointment/bookAppointment.html">Book Appointment</a><br>
+        <a href="../appointment/myAppointment.html">My Appointments</a><br>
+        <button id="logout" onclick="logout()">Logout</button>
+    </div>
+
+    
+    <script src="./home.js">
+    </script>
+</body>
+</html>

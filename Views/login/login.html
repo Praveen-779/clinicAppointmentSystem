@@ -7,13 +7,17 @@
     <title>Login</title>
 </head>
 <body>
-    <form style="text-align:center;" id="loginForm" onsubmit="addData(event)" method="POST">
+    <form style="text-align:center; background-color: rgb(162, 175, 175);" id="loginForm" onsubmit="addData(event)" method="POST">
         <label for="userName">Enter Mail</label><br>
         <input type="email" id="userName" name="userName" required><br><br>
         <label for="password">Enter Password</label><br>
         <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Sign Up">
-    </form>
+        <input type="submit" value="Login">
+    </form><br>
+    <div style="text-align: center;" id="signup">
+        <a href="../signUp/signUp.html" >New User SIGNUP</a>
+    </div>
+    
     <div id="displayErr" style="color: red;"></div>
 </body>
 </html>

@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const response = await axios.post('http://localhost:7000/user/getUser', { userId });
             const userData = response.data.user;
 
-            // Populate form fields with user data
             document.getElementById('firstName').value = userData.firstName;
             document.getElementById('lastName').value = userData.lastName;
             document.getElementById('gender').value = userData.gender;

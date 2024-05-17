@@ -7,6 +7,7 @@
     <title>DBook Appointment</title>
 </head>
 <body style="text-align: center;">
+    <a href="../home/home.html" style="position: absolute; top: 50px; right: 100px;">Go To Home Page</a>
     <h1>Book Your Appointment</h1>
     <form onsubmit="bookAppointment(event)">
         <label for="firstName">First Name</label><br>
@@ -25,9 +26,9 @@
         <label for="age">Enter Age</label><br>
         <input type="text" id="age" required><br><br>
         <label for="appointmentDate">Appointment Date</label><br>
-        <input type="date" id="appointmentDate" name="appointment"><br><br>
+        <input type="date" id="appointmentDate" name="appointment" required><br><br>
         <label for="appointmentTime">Appointment Time</label><br>
-        <input type="time" id="appointmentTime" name="appointmentTime"><br><br>
+        <input type="time" id="appointmentTime" name="appointmentTime" required><br><br>
         <label for="doctorName">Doctor Name</label><br>
         <select name="doctorName" id="doctorName">
             <option value="" disabled selected>Choose Your Doctor</option>
@@ -35,10 +36,10 @@
             <option value="doctor2">Doctor 2</option>
         </select><br><br>
         <label for="purpose">Purpose Of Visit</label><br>
-        <input type="text" id="purpose" name="purpose"><br><br>
+        <input type="text" id="purpose" name="purpose" required><br><br>
         <input type="submit" value="Book Now">
-
-    </form>
+    </form><br>
+    
 </body>
 </html>
 <script src="./bookAppointment.js">

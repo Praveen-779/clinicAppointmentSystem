@@ -7,7 +7,7 @@
     <title>SIGNUP</title>
 </head>
 <body>
-    <form style="text-align:center;" onsubmit="addData(event)" method="POST" id="signupForm">
+    <form style="text-align:center; background-color: rgb(162, 175, 175);" onsubmit="addData(event)" method="POST" id="signupForm">
         <label for="firstName">First Name</label><br>
         <input type="text" id="firstName"  required><br><br>
         <label for="lastName">Last Name</label><br>
@@ -30,7 +30,10 @@
         <label for="email">Enter Email</label><br>
         <input type="email" id="email" name="email" required><br><br>
         <input type="submit" value="Sign Up">
-    </form>
+    </form><br>
+    <div style="text-align: center; ">
+        <a href="../login/login.html">Already a user LOGIN</a>
+    </div>
 </body>
 </html>
 <script src="./signup.js">
